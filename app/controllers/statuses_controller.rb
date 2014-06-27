@@ -1,6 +1,6 @@
 class StatusesController < ApplicationController
   before_action :set_status, only: [:show, :edit, :update, :destroy]
-
+  
   # GET /statuses
   # GET /statuses.json
   def index
@@ -74,6 +74,6 @@ class StatusesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def status_params
-      params.require(:status).permit(:name, :content)
+      params.require(:status).permit(:user_id, :content)
     end
 end
