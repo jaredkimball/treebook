@@ -10,13 +10,21 @@
     <![endif]-->
 </head>
 <body>
-	 <%= render 'layouts/nav' %>
+<%= render 'layouts/nav' %>
 
 <div id="content" class="container">
-	<%= yield %>
-	<p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+<% flash.each do |type, message| %>
+   <p class="alert bg-info">
+      <button type="button" data-dismiss="alert" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <%= message %>
+    </p>
+<% end %>
+
+   <%= yield %>
+
 </div>
 
 </body>
 </html>
+
+

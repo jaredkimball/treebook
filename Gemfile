@@ -9,6 +9,8 @@ gem 'protected_attributes'
 gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
+# Font Awesome
+gem 'font-awesome-sass'
 # Use Bootstrap
 gem 'bootstrap-sass', '~> 3.1.1.1'
 # Use Uglifier as compressor for JavaScript assets
