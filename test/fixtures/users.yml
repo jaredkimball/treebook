@@ -3,3 +3,9 @@ jared:
   last_name: "Kimball"
   email: "j@k.com"
   profile_name: "Halal" 
+
+jim:
+  first_name: "Jim"
+  last_name: "Hoskins"
+  email: "jim@jim.com"
+  profile_name: "Yolo"
