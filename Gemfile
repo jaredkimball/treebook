@@ -6,7 +6,6 @@ gem 'rails', '4.1.1'
 
 gem 'protected_attributes'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Font Awesome
@@ -26,6 +25,14 @@ gem 'devise'
 # Simple form
 gem 'simple_form', '~> 3.1.0.rc1'
 
+group :development, :test do
+	gem 'sqlite3'
+end
+
+
+group :test do
+	gem 'shoulda'
+end
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
