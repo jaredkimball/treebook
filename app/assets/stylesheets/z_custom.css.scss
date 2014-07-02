@@ -1,0 +1,60 @@
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap";
+
+#content {
+	margin-top: 60px;
+}
+
+p.bg-success {
+	padding: 14px;
+}
+
+.status {
+	padding: 10px 20px;
+	border-bottom: 1px solid #ccc;
+	box-sizing: padding-box;
+}
+
+span.admin {
+	display: none;
+	margin-left: 20px;
+}
+
+.status:hover {
+	background-color: #eee;
+}
+
+.status:hover span.admin {
+	display: inline;
+}
+
+header {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #bbb;
+}
+
+fieldset {
+	background-color: #eee;
+	padding: 20px;
+	border-radius: 10px;
+
+	h2 {
+		text-align: center;
+	}
+
+	.btn {
+		width: 100%;
+	}
+
+	hr {
+		border-color: #999;
+	}
+}
+
+#register .btn {
+		width: 80%;
+		margin: 0 10%;
+	}
